@@ -8,6 +8,7 @@ data_download.py - Scrapping Data from Passportindex.com
 migration_&_political_freedom.py - Exploring how migration and political freedom impact travel visa-free scores
 covid.py - Explores Covid-19 impact visa policy in a temporal dimension
 terrorism-GDP.py - Explores Terrorism Activities, GDP impact visa policy in a temporal dimension
+Reciprocity_Asymmetry.py - Analyzing whether visa-free access is always reciprocated between countries
 ```
 
 ## How to run the scripts
