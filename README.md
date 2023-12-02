@@ -9,7 +9,7 @@ migration_&_political_freedom.py - Exploring how migration and political freedom
 covid.py - Explores Covid-19 impact visa policy in a temporal dimension
 terrorism-GDP.py - Explores Terrorism Activities, GDP impact visa policy in a temporal dimension
 Reciprocity_Asymmetry.py - Analyzing whether visa-free access is always reciprocated between countries
-visualization_final.ipynb - All the visualizations generated for your presentation
+visualization_final.ipynb - All the visualizations generated for the presentation
 ```
 
 ## How to run the scripts
