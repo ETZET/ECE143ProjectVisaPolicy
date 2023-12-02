@@ -1,0 +1,4 @@
+repo_path: /home/captainlevi/Documents/Coursework/FA23/ECE143/project/passport-index-dataset/
+output_folder: /home/captainlevi/Documents/Coursework/FA23/ECE143/project/final_results
+video_name_outgoing: video_outgoing.mp4
+video_name_incoming: video_incoming.mp4
