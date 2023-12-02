@@ -2,7 +2,7 @@
 
 ## Files
 ```
-data_prep.py - Dataset Proprocessing Script
+data_prep.py - Dataset Pre-processing Script
 eda.py - Explorative Data Analysis Script
 data_download.py - Scrapping Data from Passportindex.com
 migration_&_political_freedom.py - Exploring how migration and political freedom impact travel visa-free scores
