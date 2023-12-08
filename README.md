@@ -68,6 +68,8 @@ python geoviews_tools.py --config config_file.yaml
 - warnings
 - moviepy
 - holoviews
+- yaml
+- argparser
 
 They can be install by the following command:
 `pip install -r requirements.txt`
