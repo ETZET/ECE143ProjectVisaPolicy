@@ -30,7 +30,7 @@ A) Terrorism and GDP Analysis:
 
 B) Terrorism and GDP Analysis:
 1. Install the third party modules.
-2. Download the COVID dataset from the below mentioned link and put it under the `data` folder.  (The file was too huge to be uploaded in the Repo:
+2. Download the COVID dataset from the below mentioned link and put it under the `data` folder.  (The file was too huge to be uploaded in the Repo) :
    https://drive.google.com/file/d/1gso0Zl5SMqhewanPa9PndkT79lsTZ7BS/view?usp=sharing
 3. Save the downloaded file under the `data` folder, and save it with the same name with which it has been downloaded.
 4. Run `covid.py` present under the `src` folder to obtain the results.
