@@ -10,9 +10,18 @@ import matplotlib.pyplot as plt
 from collections import defaultdict
 import seaborn as sns
 import dateutil
+import argparse
 
 
 # In[2]:
+parser = argparse.ArgumentParser()
+parser.add_argument("--config", default="config_file.yaml")
+args = parser.parse_args()
+
+config_file = args.config
+with open(config_file, 'r') as file:
+    config = yaml.safe_load(file)
+
 
 
 #OUTGOING
@@ -23,7 +32,7 @@ import dateutil
 
 country_out_2023 = defaultdict(int)
 
-passport_data_2023 = np.genfromtxt('passport-index-matrix-iso3.csv', delimiter=',', dtype=str, skip_header=1)
+passport_data_2023 = np.genfromtxt(config['passport_2023'], delimiter=',', dtype=str, skip_header=1)
 
 for i in passport_data_2023:
     coun = i[0]
@@ -42,7 +51,7 @@ country_visa_outgoing_2023 = dict(sorted(country_out_2023.items(), key=lambda it
 
 country_out_2022 = defaultdict(int)
 
-passport_data_2022 = np.genfromtxt('passport-index-matrix-iso3-2022.csv', delimiter=',', dtype=str, skip_header=1)
+passport_data_2022 = np.genfromtxt(config['passport_2022'], delimiter=',', dtype=str, skip_header=1)
 
 for i in passport_data_2022:
     coun = i[0]
@@ -61,7 +70,7 @@ country_visa_outgoing_2022 = dict(sorted(country_out_2022.items(), key=lambda it
 
 country_out_2021 = defaultdict(int)
 
-passport_data_2021 = np.genfromtxt('passport-index-matrix-iso3-2021.csv', delimiter=',', dtype=str, skip_header=1)
+passport_data_2021 = np.genfromtxt(config['passport_2021'], delimiter=',', dtype=str, skip_header=1)
 
 for i in passport_data_2021:
     coun = i[0]
@@ -80,7 +89,7 @@ country_visa_outgoing_2021 = dict(sorted(country_out_2021.items(), key=lambda it
 
 country_out_2020 = defaultdict(int)
 
-passport_data_2020 = np.genfromtxt('passport-index-matrix-iso3-2020.csv', delimiter=',', dtype=str, skip_header=1)
+passport_data_2020 = np.genfromtxt(config['passport_2020'], delimiter=',', dtype=str, skip_header=1)
 
 for i in passport_data_2020:
     coun = i[0]
@@ -109,25 +118,25 @@ country_visa_outgoing_2020 = dict(sorted(country_out_2020.items(), key=lambda it
 # In[8]:
 
 
-df_2023 = np.genfromtxt('passport-index-iso3-transposed.csv', delimiter=',', dtype=str, skip_header=1)
+df_2023 = np.genfromtxt(config['passport_transposed_2023'], delimiter=',', dtype=str, skip_header=1)
 
 
 # In[9]:
 
 
-df_2022 = np.genfromtxt('passport-index-matrix-iso3-transposed-2022.csv', delimiter=',', dtype=str, skip_header=1)
+df_2022 = np.genfromtxt(config['passport_transposed_2022'], delimiter=',', dtype=str, skip_header=1)
 
 
 # In[10]:
 
 
-df_2021 = np.genfromtxt('passport-index-matrix-iso3-transposed-2021.csv', delimiter=',', dtype=str, skip_header=1)
+df_2021 = np.genfromtxt(config['passport_transposed_2021'], delimiter=',', dtype=str, skip_header=1)
 
 
 # In[11]:
 
 
-df_2020 = np.genfromtxt('passport-index-matrix-iso3-transposed-2020.csv', delimiter=',', dtype=str, skip_header=1)
+df_2020 = np.genfromtxt(config['passport_transposed_2020'], delimiter=',', dtype=str, skip_header=1)
 
 
 # In[12]:
@@ -214,7 +223,7 @@ country_visa_incoming_2020 = dict(sorted(country_in_2020.items(), key=lambda ite
 # In[19]:
 
 
-df_covid = np.genfromtxt("owid-covid-data.csv", delimiter=',', dtype=str, skip_header=1)
+df_covid = np.genfromtxt(config['covid'], delimiter=',', dtype=str, skip_header=1)
 
 
 # In[21]:
@@ -316,7 +325,7 @@ merged_df_2020 = pd.merge(merged_df_2020, covid_df_2020, on='Country')
 # In[35]:
 
 
-df_continent = np.genfromtxt("country-continent.csv", delimiter=',', dtype=str, skip_header=1)
+df_continent = np.genfromtxt(config['data_continent'], delimiter=',', dtype=str, skip_header=1)
 
 
 # In[36]:
