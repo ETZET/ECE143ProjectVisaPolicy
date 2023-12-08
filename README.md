@@ -16,6 +16,14 @@ geoviews_tools.py - python script to generate a visual interactive tool of outgo
 utils.py - helper functions to run geoviews_gif.py and geoviews_tools.py
 ```
 
+## Setting up the environment
+We use conda for all package management in this repository. To install all library dependencies, create the conda environment from `conda_env_generate_config.yml` using the following command (`ece143_grp6_env` is the name of the conda environment):
+
+```
+conda env create -f conda_env_generate_config.yml
+conda activate ece143_grp6_env
+```
+
 ## Config Files
 
 - ```config_visualization.py``` :  change the paths in this config file for the visualization codes (geoviews_gif.py and geoviews_tools.py)
@@ -55,28 +63,13 @@ C) Visualization gif and interactive tool:
 
 2. To run the geoviews_gif.py:
 ```
-python visualization/geoviews_gif.py --config config_visualization.yaml
+python visualization/geoviews_gif.py --config config/config_visualization.yaml
 ```
 3. To run the geoviews_tools.py:
 ```
-python visualization/geoviews_tools.py --config config_visualization.yaml
+python visualization/geoviews_tools.py --config config/config_visualization.yaml
 ```
 
-## Third-Party Modules
-- pandas
-- numpy
-- matplotlib
-- seaborn
-- geopandas
-- geoviews
-- os
-- tqdm
-- cv2
-- warnings
-- moviepy
-- holoviews
-- yaml
-- argparser
+## Final Visualization Notebook
 
-They can be install by the following command:
-`pip install -r requirements.txt`
+The final visualization notebook is `visualization_final.ipynb` under the `visualization` folder. It contains all the visualizations generated for the presentation.
