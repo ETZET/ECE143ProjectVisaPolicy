@@ -399,6 +399,9 @@ def combined_donut_chart_outgoing(data, title):
     table_data = {'Continent': outgoing_by_continent.index,
                   'Outgoing %': outgoing_by_continent / outgoing_by_continent.sum() * 100,
                   'COVID %': covid_by_continent / covid_by_continent.sum() * 100}
+ 
+    table_data['Outgoing %'] = table_data['Outgoing %'].round(2)
+    table_data['COVID %'] = table_data['COVID %'].round(2)
 
     table_df = pd.DataFrame(table_data)
     ax_table.axis('off')
@@ -464,6 +467,10 @@ def combined_donut_chart_incoming(data, title):
     table_data = {'Continent': outgoing_by_continent.index,
                   'Incoming %': outgoing_by_continent / outgoing_by_continent.sum() * 100,
                   'COVID %': covid_by_continent / covid_by_continent.sum() * 100}
+
+    table_data['Incoming %'] = table_data['Incoming %'].round(2)
+    table_data['COVID %'] = table_data['COVID %'].round(2)
+    
 
     table_df = pd.DataFrame(table_data)
     ax_table.axis('off')
