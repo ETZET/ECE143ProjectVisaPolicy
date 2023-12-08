@@ -13,6 +13,8 @@ from utils.utils_visualization import plot_choropleth_maps, make_gif
 
 gv.extension('bokeh', 'matplotlib')
 
+data_path = "data/"
+
 
 def main():
     parser = argparse.ArgumentParser()
@@ -23,7 +25,7 @@ def main():
     with open(config_file, 'r') as file:
         config = yaml.safe_load(file)
 
-    legacy_dir = os.path.join(config["legacy_data_path"], "legacy/")
+    legacy_dir = os.path.join(data_path, "legacy/")
     images_folder_outgoing = os.path.join(config["output_folder"], "images/outgoing")
     images_folder_incoming = os.path.join(config["output_folder"], "images/incoming")
     video_folder = os.path.join(config["output_folder"], "final_videos")

@@ -16,6 +16,8 @@ import argparse
 hv.extension('bokeh')
 gv.extension('bokeh', 'matplotlib')
 
+data_path = "data/"
+
 
 def main():
     parser = argparse.ArgumentParser()
@@ -33,7 +35,7 @@ def main():
         os.makedirs(output_folder)
 
     subdirs = ['2020-11-19', '2021-12-14', '2022-12-21', '2023-10-11']
-    legacy_dir = os.path.join(config["legacy_data_path"], "legacy/")
+    legacy_dir = os.path.join(data_path, "legacy/")
     world = gpd.read_file(gpd.datasets.get_path('naturalearth_lowres'))
 
     world_year_data = gpd.GeoDataFrame(columns=['name', 'continent', 'iso_a3', 'geometry', 'pop_est', 'gdp_md_est', 

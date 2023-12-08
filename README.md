@@ -16,6 +16,15 @@ geoviews_tools.py - python script to generate a visual interactive tool of outgo
 utils.py - helper functions to run geoviews_gif.py and geoviews_tools.py
 ```
 
+## Config Files
+
+- ```config_visualization.py``` :  change the paths in this config file for the visualization codes (geoviews_gif.py and geoviews_tools.py)
+
+   - output_folder: path to the folder where all the results will be saved (if directory does not exist, it will be created automatically when you run the code)
+   - video_name_outgoing: name of the video file for outgoing visa free travel animation (just the name, not the path)
+   - video_name_incoming: name of the video file for incoming visa free travel animation (just the name, not the path)
+
+- ```config_visualization.py``` : (Jaya)
 
 ## How to run the scripts
 
@@ -25,7 +34,7 @@ A) Terrorism and GDP Analysis:
 3. Run `terrorism-GDP.py` present under the `src` folder to obtain the results.
 4. To run the file:
    ```
-    python src/terrorism_GDP.py --config config/config_src.yaml
+    python terrorism_GDP.py --config config/config_src.yaml
    ```
 
 B) Covid Analysis:
@@ -36,32 +45,22 @@ B) Covid Analysis:
 4. Run `covid.py` present under the `src` folder to obtain the results.
 5. To run the file:
    ```
-    python src/covid.py --config config/config_src.yaml
+    python covid.py --config config/config_src.yaml
    ```
 
 
-C) Siddharth:
-1. Install the listed third-party modules.
-2. Run `data_download.py` to obtain the data.
-3. Run `data_prep.py` to obtain the preprocessed data.
-4. Run all other scripts to obtain analysis result.
-5. Change the paths and file names in the config_file.yaml to run geoviews_gif.py and geoviews_tools.py
-6. To run the geoviews_gif.py:
-```
-python geoviews_gif.py --config config_file.yaml
-```
-7. To run the geoviews_tools.py:
-```
-python geoviews_tools.py --config config_file.yaml
-```
+C) Visualization gif and interactive tool:
 
-D) Data Downloading Preprocessing and EDA:
-1. Install the listed third-party modules.
-2. Run `data_download.py` to obtain the data.
-3. Run `data_prep.py` to obtain the preprocessed data.
-4. Run `eda.py` to generate all figures for explorative data anaysis
-5. Reference viusalization and the slide to review all figures generated
-from eda.py
+1. Change the paths and file names in the config_visualization.yaml (as defined above) to run geoviews_gif.py and geoviews_tools.py
+
+2. To run the geoviews_gif.py:
+```
+python geoviews_gif.py --config config_visualization.yaml
+```
+3. To run the geoviews_tools.py:
+```
+python geoviews_tools.py --config config_visualization.yaml
+```
 
 ## Third-Party Modules
 - pandas
@@ -81,17 +80,3 @@ from eda.py
 
 They can be install by the following command:
 `pip install -r requirements.txt`
-
-
-Reference:
-- **Main Data Source:** [Passport Index](https://www.passportindex.org)
-  - Contains comprehensive data for visa policy for 199 countries
-
-- **Auxiliary Data Source 1:** [Countries of the World](https://www.kaggle.com/datasets/fernandol/countries-of-the-world)
-  - Contains data for basic information for countries, such as population, GDP, literacy.
-
-- **Auxiliary Data Source 2:** [World Freedom Index](https://www.kaggle.com/datasets/sujaykapadnis/world-freedom-index)
-  - Contains data for global political rights and civil liberties statistics for 195 countries
-
-- **Auxiliary Data Source 3:** [Global Terrorism Index 2023](https://www.kaggle.com/datasets/ddosad/global-terrorism-index-2023)
-  - Contains data for terrorism activities, such as terrorism rank, number of incidents, fatalities…
