@@ -1,1 +1,16 @@
+passport_2023 : data/passport-index-matrix-iso3.csv
+passport_2022 : data/passport-index-matrix-iso3-2022.csv
+passport_2021 : data/passport-index-matrix-iso3-2021.csv
+passport_2020 : data/passport-index-matrix-iso3-2020.csv
+
+passport_transposed_2023 : data/passport-index-iso3-transposed.csv
+passport_transposed_2022: data/passport-index-matrix-iso3-transposed-2022.csv
+passport_transposed_2021: data/passport-index-matrix-iso3-transposed-2021.csv
+passport_transposed_2020: data/passport-index-matrix-iso3-transposed-2020.csv
+
+covid : data/owid-covid-data.csv
+
+data_continent : data/country-continent.csv
+
+data_terror_gdp : data/Terrorism-GDP data.csv
 
