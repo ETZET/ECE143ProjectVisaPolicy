@@ -25,7 +25,7 @@ A) Terrorism and GDP Analysis:
 3. Run `terrorism-GDP.py` present under the `src` folder to obtain the results.
 4. To run the file:
    ```
-    python terrorism_GDP.py --config config/config_src.yaml
+    python src/terrorism_GDP.py --config config/config_src.yaml
    ```
 
 B) Covid Analysis:
@@ -36,7 +36,7 @@ B) Covid Analysis:
 4. Run `covid.py` present under the `src` folder to obtain the results.
 5. To run the file:
    ```
-    python covid.py --config config/config_src.yaml
+    python src/covid.py --config config/config_src.yaml
    ```
 
 
