@@ -18,6 +18,29 @@ utils.py - helper functions to run geoviews_gif.py and geoviews_tools.py
 
 
 ## How to run the scripts
+
+A) Terrorism and GDP Analysis:
+1. Install the third party modules.
+2. All the required data is already present under the `data` folder.
+3. Run `terrorism-GDP.py` present under the `src` folder to obtain the results.
+4. To run the file:
+   ```
+    python terrorism_GDP.py --config config/config_src.yaml
+   ```
+
+B) Terrorism and GDP Analysis:
+1. Install the third party modules.
+2. Download the COVID dataset from the below mentioned link and put it under the `data` folder.  (The file was too huge to be uploaded in the Repo:
+   https://drive.google.com/file/d/1gso0Zl5SMqhewanPa9PndkT79lsTZ7BS/view?usp=sharing
+3. Save the downloaded file under the `data` folder, and save it with the same name with which it has been downloaded.
+4. Run `covid.py` present under the `src` folder to obtain the results.
+5. To run the file:
+   ```
+    python covid.py --config config/config_src.yaml
+   ```
+
+
+C) Siddharth:
 1. Install the listed third-party modules.
 2. Run `data_download.py` to obtain the data.
 3. Run `data_prep.py` to obtain the preprocessed data.
