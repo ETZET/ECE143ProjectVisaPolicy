@@ -55,11 +55,11 @@ C) Visualization gif and interactive tool:
 
 2. To run the geoviews_gif.py:
 ```
-python geoviews_gif.py --config config_visualization.yaml
+python visualization/geoviews_gif.py --config config_visualization.yaml
 ```
 3. To run the geoviews_tools.py:
 ```
-python geoviews_tools.py --config config_visualization.yaml
+python visualization/geoviews_tools.py --config config_visualization.yaml
 ```
 
 ## Third-Party Modules
