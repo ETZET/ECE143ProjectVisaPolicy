@@ -19,7 +19,7 @@ def main():
     with open(config_file, 'r') as file:
         config = yaml.safe_load(file)
 
-    legacy_dir = os.path.join(config["repo_path"], "legacy/")
+    legacy_dir = os.path.join(config["legacy_data_path"], "legacy/")
     images_folder_outgoing = os.path.join(config["output_folder"], "images/outgoing")
     images_folder_incoming = os.path.join(config["output_folder"], "images/incoming")
     video_folder = os.path.join(config["output_folder"], "final_videos")
