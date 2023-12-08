@@ -81,3 +81,17 @@ from eda.py
 
 They can be install by the following command:
 `pip install -r requirements.txt`
+
+
+Reference:
+- **Main Data Source:** [Passport Index](https://www.passportindex.org)
+  - Contains comprehensive data for visa policy for 199 countries
+
+- **Auxiliary Data Source 1:** [Countries of the World](https://www.kaggle.com/datasets/fernandol/countries-of-the-world)
+  - Contains data for basic information for countries, such as population, GDP, literacy.
+
+- **Auxiliary Data Source 2:** [World Freedom Index](https://www.kaggle.com/datasets/sujaykapadnis/world-freedom-index)
+  - Contains data for global political rights and civil liberties statistics for 195 countries
+
+- **Auxiliary Data Source 3:** [Global Terrorism Index 2023](https://www.kaggle.com/datasets/ddosad/global-terrorism-index-2023)
+  - Contains data for terrorism activities, such as terrorism rank, number of incidents, fatalities…
