@@ -13,9 +13,9 @@ import holoviews as hv
 import yaml
 import argparse
 
-
 hv.extension('bokeh')
 gv.extension('bokeh', 'matplotlib')
+
 
 def main():
     parser = argparse.ArgumentParser()

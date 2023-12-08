@@ -4,8 +4,12 @@ import os
 from collections import defaultdict
 import warnings
 import yaml
-from utils import plot_choropleth_maps, make_gif
 import argparse
+import sys
+
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
+from utils.utils_visualization import plot_choropleth_maps, make_gif
 
 gv.extension('bokeh', 'matplotlib')
 
