@@ -55,6 +55,14 @@ python geoviews_gif.py --config config_file.yaml
 python geoviews_tools.py --config config_file.yaml
 ```
 
+D) Data Downloading Preprocessing and EDA:
+1. Install the listed third-party modules.
+2. Run `data_download.py` to obtain the data.
+3. Run `data_prep.py` to obtain the preprocessed data.
+4. Run `eda.py` to generate all figures for explorative data anaysis
+5. Reference viusalization and the slide to review all figures generated
+from eda.py
+
 ## Third-Party Modules
 - pandas
 - numpy
