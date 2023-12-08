@@ -28,7 +28,7 @@ A) Terrorism and GDP Analysis:
     python terrorism_GDP.py --config config/config_src.yaml
    ```
 
-B) Terrorism and GDP Analysis:
+B) Covid Analysis:
 1. Install the third party modules.
 2. Download the COVID dataset from the below mentioned link and put it under the `data` folder.  (The file was too huge to be uploaded in the Repo) :
    https://drive.google.com/file/d/1gso0Zl5SMqhewanPa9PndkT79lsTZ7BS/view?usp=sharing
