@@ -18,6 +18,9 @@ conda activate ece143_grp6_env
    - video_name_incoming: name of the video file for incoming visa free travel animation (just the name, not the path)
 
 
+- ```config_src.py``` :  The paths for running Terrorism, GDP and Covid Analysis is present in this file.
+
+
 ## Files
 ```
 data_prep.py - Dataset Pre-processing Script
