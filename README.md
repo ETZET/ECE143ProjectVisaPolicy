@@ -90,7 +90,7 @@ python visualization/geoviews_gif.py --config config/config_visualization.yaml
 python visualization/geoviews_tools.py --config config/config_visualization.yaml
 ```
 
-D) Migration and Political Freedom
+D) Migration and Political Freedom Analysis:
 1. Install the third party modules.
 2. All the required data is already present under the `data` folder.
 3. Run `migration_&_political_freedom.py` present under the `src` folder to obtain the results.
