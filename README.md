@@ -1,20 +1,5 @@
 # ECE143ProjectVisaPolicy
 
-## Files
-```
-data_prep.py - Dataset Pre-processing Script
-eda.py - Explorative Data Analysis Script
-data_download.py - Scrapping Data from Passportindex.com
-migration_&_political_freedom.py - Exploring how migration and political freedom impact travel visa-free scores
-covid.py - Explores Covid-19 impact visa policy in a temporal dimension
-terrorism-GDP.py - Explores Terrorism Activities, GDP impact visa policy in a temporal dimension
-Reciprocity_Asymmetry.py - Analyzing whether visa-free access is always reciprocated between countries
-visualization_final.ipynb - All the visualizations generated for the presentation
-config_file.yaml - config file to define path and name variables for geoviews_gif.py and geoviews_tools.py
-geoviews_gif.py - python script to generate the gif of outgoing and incoming visa free travel across different years
-geoviews_tools.py - python script to generate a visual interactive tool of outgoing and incoming visa free travel across different years
-utils.py - helper functions to run geoviews_gif.py and geoviews_tools.py
-```
 
 ## Setting up the environment
 We use conda for all package management in this repository. To install all library dependencies, create the conda environment from `conda_env_generate_config.yml` using the following command (`ece143_grp6_env` is the name of the conda environment):
@@ -32,7 +17,23 @@ conda activate ece143_grp6_env
    - video_name_outgoing: name of the video file for outgoing visa free travel animation (just the name, not the path)
    - video_name_incoming: name of the video file for incoming visa free travel animation (just the name, not the path)
 
-- ```config_visualization.py``` : (Jaya)
+
+## Files
+```
+data_prep.py - Dataset Pre-processing Script
+eda.py - Explorative Data Analysis Script
+data_download.py - Scrapping Data from Passportindex.com
+migration_&_political_freedom.py - Exploring how migration and political freedom impact travel visa-free scores
+covid.py - Explores Covid-19 impact visa policy in a temporal dimension
+terrorism-GDP.py - Explores Terrorism Activities, GDP impact visa policy in a temporal dimension
+Reciprocity_Asymmetry.py - Analyzing whether visa-free access is always reciprocated between countries
+visualization_final.ipynb - All the visualizations generated for the presentation
+config_file.yaml - config file to define path and name variables for geoviews_gif.py and geoviews_tools.py
+geoviews_gif.py - python script to generate the gif of outgoing and incoming visa free travel across different years
+geoviews_tools.py - python script to generate a visual interactive tool of outgoing and incoming visa free travel across different years
+utils.py - helper functions to run geoviews_gif.py and geoviews_tools.py
+```
+
 
 ## How to run the scripts
 
