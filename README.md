@@ -90,6 +90,15 @@ python visualization/geoviews_gif.py --config config/config_visualization.yaml
 python visualization/geoviews_tools.py --config config/config_visualization.yaml
 ```
 
+D) Migration and Political Freedom
+1. Install the third party modules.
+2. All the required data is already present under the `data` folder.
+3. Run `migration_&_political_freedom.py` present under the `src` folder to obtain the results.
+4. To run the file:
+   ```
+    python migration_&_political_freedom.py --config config/config_src.yaml
+   ```
+
 ## Final Visualization Notebook
 
 The final visualization notebook is `visualization_final.ipynb` under the `visualization` folder. It contains all the visualizations generated for the presentation.
