@@ -1,5 +1,21 @@
 # ECE143ProjectVisaPolicy
 
+## Introduction
+
+Our final project for ECE143 @UCSD focused on gathering and analyzing data and statistics related to passport visa. Using primary data from https://www.passportindex.org/ and a few other sources, we hoped to answer the following questions regarding visas worldwide.
+
+- Visa Generosity: Which countries are the most and least generous in terms of offering visa-free access and visa-free days?
+- Correlation with Country Attributes: Do visa policies correlate with various country attributes, such as GDP, population, literacy rates, or skilled migration indices?
+- Long-Term Trends: By analyzing historical data back to 2019, how have visa policies evolved over the years?
+- COVID-19 Impact: How has the COVID-19 pandemic influenced visa policies? 
+- Outliers in Visa Policies: Are there specific countries that deviate significantly from global trends in their visa policies?
+- Reciprocity and Asymmetry: Is visa-free access always reciprocated between countries, or are there instances of one-way visa-free access? 
+
+After analysis of the data, we came across interesting results such as developed nations being the most restrictive with their visa policies while having the most freedom to visit other countries, that visa policies have become more permissive over the years as terrorism drops, that COVID had no impact on visas themselves, and that 72% of countries have fully reciprocated visa policies with each other. We also created a tool to help visualize the visa data on an actual map.
+
+The rest of this text covers how to reproduce our graphs and results.
+
+
 
 ## Setting up the environment
 We use conda for all package management in this repository. To install all library dependencies, create the conda environment from `conda_env_generate_config.yml` using the following command (`ece143_grp6_env` is the name of the conda environment):
