@@ -20,6 +20,7 @@ data_path = "data/"
 
 
 def main():
+    # code for generating the tools for the visa free travel maps interactive visualization
     parser = argparse.ArgumentParser()
     parser.add_argument("--config", default="config_file.yaml")
     args = parser.parse_args()
